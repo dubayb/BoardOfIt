@@ -17,5 +17,5 @@ pod 'FirebaseUI/Facebook'
 pod 'FirebaseUI/Phone'
 pod 'Firebase/Messaging'
 pod ‘Geofirestore'
-
+pod 'MessageKit'
 end

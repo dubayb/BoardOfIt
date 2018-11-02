@@ -16,7 +16,6 @@ class BoardGameCollectionViewCell: UICollectionViewCell {
             if item.imageUrl != "" {
                  boarGameImageView!.sd_setImage(with: item.imageUrl.url, placeholderImage: UIImage(named: "bggLogo"))
             }
-           
         }
     }
     override func awakeFromNib() {

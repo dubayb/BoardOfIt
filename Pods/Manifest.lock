@@ -168,6 +168,7 @@ PODS:
   - GTMSessionFetcher/Full (1.2.0):
     - GTMSessionFetcher/Core (= 1.2.0)
   - leveldb-library (1.20)
+  - MessageKit (1.0.0)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -189,6 +190,7 @@ DEPENDENCIES:
   - FirebaseUI/Google
   - FirebaseUI/Phone
   - Geofirestore
+  - MessageKit
   - PluggableApplicationDelegate
   - SDStateTableView
   - SDWebImage (~> 4.0)
@@ -223,6 +225,7 @@ SPEC REPOS:
     - GTMOAuth2
     - GTMSessionFetcher
     - leveldb-library
+    - MessageKit
     - nanopb
     - PluggableApplicationDelegate
     - Protobuf
@@ -258,12 +261,13 @@ SPEC CHECKSUMS:
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MessageKit: 16160036b16476b04bd0e9f2c7ce67e662e503e4
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   PluggableApplicationDelegate: 6b55523e4adb5b4f55c97a2d3f107990656caa4a
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SDStateTableView: 59b560e09fcb91dba6ce420744927343c7447ba2
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: fdfe27655ba00637c080851168ebbdff68ac2886
+PODFILE CHECKSUM: 7e2b962b1df632b55d951c39a6c5aa15936a8037
 
 COCOAPODS: 1.5.3

@@ -37,7 +37,7 @@ extension Router  {
         urlRequest.setValue(authHeader, forHTTPHeaderField: "Authorization")
         
         // Parameters
-//        if let parameters = parameters {
+//        if let parameters = Parameters {
 //            do {
 //                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
 //            } catch {
@@ -49,8 +49,10 @@ extension Router  {
         
     }
 }
-
+//
 //enum Parameters : String {
+//
+//    case
 //
 //}
 
