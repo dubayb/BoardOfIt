@@ -9,9 +9,8 @@
 import UIKit
 import SDWebImage
 import SDStateTableView
-class BBGUserListViewController: UIViewController , ViewPresentable  ,BGGUserListParser{
+class BBGUserListViewController: UIViewController , BGGUserListParser{
     
-    var identifier = String(describing:self)
     
     @IBOutlet weak var tableView: SDStateTableView!
     

@@ -8,33 +8,53 @@
 
 import Foundation
 import FirebaseFirestore
-class Matcher: NSObject {
+
+class Matcher: NSObject  {
+    
+    
     static let shared = Matcher()
     var matchedUserNames = [String]()
     
-    func configureMatchesWithGeofireReferences(usersNearby:CollectionReference, completion:@escaping ([String],[[[DataBaseGameItem]]])->Void) {
+    func configureMatchesWithGeofireReferences(usersNearby:CollectionReference, completion:@escaping (Result<Any>)->Void) {
         
         let group = DispatchGroup()
         var usersGamesCollections = [[[DataBaseGameItem]]]()
         var nearbyUserNames = [String]()
         usersNearby.addSnapshotListener { (snap, error) in
+            if let er = error {
+                group.leave()
+                completion(Result.failure(er.localizedDescription))
+                
+            }
             for doc in snap!.documents {
                  guard doc.documentID != DataBaseShared.currentUser?.uid else { continue }
                 print(doc.documentID)
                 print(doc.data())
-                nearbyUserNames.append(doc.data()["BGGUserName"] as? String ?? "")
-                let dbUserRef = DataBaseShared.db.collection(FirebaseConstants.usersCollection.rawValue).document(doc.documentID)
-                let nearbyUsersGames = dbUserRef.collection("games")
-                group.enter()
-               
-                self.getGamesOfUsers(gamesCollectionReference: nearbyUsersGames) { gameItems in
+                if let username = doc.data()["BGGUserName"] as? String {
+                    //group count + 1
+                    group.enter()
                     
-                    usersGamesCollections.append(gameItems)
-                    group.leave()
+                    nearbyUserNames.append(username)
+                    print(username)
+                    let dbUserRef = DataBaseShared.db.collection(FirebaseConstants.usersCollection.rawValue).document(doc.documentID)
+                    let nearbyUsersGames = dbUserRef.collection("games")
+                    
+                    self.getGamesOfUsers(gamesCollectionReference: nearbyUsersGames) { gameItems in
+                        
+                        usersGamesCollections.append(gameItems)
+                        //successfully found user // group count - 1
+                        group.leave()
+                    }
                 }
+                
             }
+            // group count is 0 notify and return with successful with data or failure with error
             group.notify(queue: .main, execute: {
-                completion(nearbyUserNames,usersGamesCollections)
+                if nearbyUserNames.isEmpty {
+                    completion(Result.failure("No Users Near Current User"))
+                } else {
+                    completion(Result.success(["usernames":nearbyUserNames,"gameItems":usersGamesCollections]))
+                }
             })
         }
     }

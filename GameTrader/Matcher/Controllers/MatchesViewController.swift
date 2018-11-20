@@ -9,11 +9,11 @@
 import UIKit
 import Geofirestore
 import FirebaseFirestore
+import SDStateTableView
 
 class MatchesViewController: UIViewController  {
     
-    
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: SDStateTableView!
     var viewModel : MultipleTypesViewModel? {
         didSet {
             tableView.register(BoardGameCollectionViewTableViewCell.nib, forCellReuseIdentifier: BoardGameCollectionViewTableViewCell.reuseIdentifier)
@@ -27,10 +27,10 @@ class MatchesViewController: UIViewController  {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        listenToDataBaseUpdated()
         self.navigationItem.title = "Users Near You"
         self.displayActivityIndicator(shouldDisplay: true)
-        listenToDataBaseUpdated()
+        
         NotificationCenter.default.addObserver(forName: .clickedAGame, object: nil, queue: nil) { (notification) in
             if let gameItem = notification.object as? DataBaseGameItem {
                 print(gameItem.name)
@@ -38,21 +38,29 @@ class MatchesViewController: UIViewController  {
         }
     }
     
-    func listenToDataBaseUpdated() {
-        let usersFirestoreRef = Firestore.firestore().collection(FirebaseConstants.usersCollection.rawValue)
-        let geofire = GeoFirestore(collectionRef: usersFirestoreRef)
-        let query = geofire.query(withCenter: LocationService.usersLocation, radius: 9)
-        _ = query.observeReady {
-            Matcher.shared.configureMatchesWithGeofireReferences(usersNearby: geofire.collectionRef) { (usernames, gameItems) in
-                self.viewModel = MultipleTypesViewModel.init(items: gameItems, headers: usernames)
-            }
-        }
-    }
+    
     
 }
-    extension MatchesViewController : UITableViewDelegate {
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//            let userToMatchWith = Matcher.shared.matchedUserNames[indexPath.section]
-            //message this user
-        }
+extension MatchesViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let userToMatchWith = Matcher.shared.matchedUserNames[indexPath.section]
+        print(userToMatchWith)
+        //message this user
+    }
+}
+extension MatchesViewController : FireStoreUserNearby {
+    
+    func successWithData(data: Any) {
+        let userInfo = data as! Dictionary<String, Any>
+        self.viewModel = MultipleTypesViewModel.init(items: userInfo["gameItems"] as! [[[DataBaseGameItem]]], headers:userInfo["usernames"] as! [String])
+    }
+    
+    func failureWithError(error: String) {
+        self.tableView.setState(.withButton(errorImage: "", title: "Sorry! There are no users near you.", message: "", buttonTitle: "Refresh", buttonConfig: { (button) in
+            self.listenToDataBaseUpdated()
+        }, retryAction: {
+            self.listenToDataBaseUpdated()
+        }))
+    }
+    
 }

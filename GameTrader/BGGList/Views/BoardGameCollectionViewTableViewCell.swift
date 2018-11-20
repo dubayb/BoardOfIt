@@ -14,12 +14,15 @@ class BoardGameCollectionViewTableViewCell: UITableViewCell , ReusableCell {
     @IBOutlet weak var collectionView: UICollectionView!
     var items: [ViewItem]? {
         didSet {
-            switch items![0].gameStatus {
-            case .forTrade:
-                forTradeOrWants.text = "For Trade"
-            case .wants:
-                forTradeOrWants.text = "Wants"
-            }
+            if let firstItem = items?.first {
+                switch firstItem.gameStatus {
+                case .forTrade:
+                    forTradeOrWants.text = "For Trade"
+                case .wants:
+                    forTradeOrWants.text = "Wants"
+                }
+            } 
+           
            collectionView.reloadData()
         }
     }
