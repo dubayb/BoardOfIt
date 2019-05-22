@@ -11,6 +11,7 @@ import SDWebImage
 
 class BoardGameCollectionViewCell: UICollectionViewCell {
     
+    
     var item : ViewItem! {
         didSet {
             if item.imageUrl != "" {
@@ -18,6 +19,7 @@ class BoardGameCollectionViewCell: UICollectionViewCell {
             }
         }
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

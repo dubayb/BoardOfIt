@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 import FirebaseAnalytics
-import GeoFire
+//import GeoFire
 
 class AnalyticsService: NSObject ,Servicing {
     func configure() {

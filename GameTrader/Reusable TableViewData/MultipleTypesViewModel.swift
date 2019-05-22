@@ -29,7 +29,6 @@ extension MultipleTypesViewModel : UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let rowItem = items[indexPath.section][indexPath.row]
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: BoardGameCollectionViewTableViewCell.reuseIdentifier, for: indexPath) as! BoardGameCollectionViewTableViewCell
         
         cell.items = rowItem
@@ -46,10 +45,10 @@ extension MultipleTypesViewModel : UITableViewDataSource {
 
 extension MultipleTypesViewModel : UITableViewDelegate {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
 }
 

@@ -31,15 +31,10 @@ class BoardGameCollectionViewTableViewCell: UITableViewCell , ReusableCell {
         //register collection cell
         collectionView.dataSource = self
         collectionView.delegate = self
-        
         let nib = UINib(nibName: "BoardGameCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "BoardGameCollectionViewCell")
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
     
 }
 extension BoardGameCollectionViewTableViewCell : UICollectionViewDataSource {

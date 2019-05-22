@@ -15,9 +15,9 @@ fileprivate let activityIndicatorTag = 1000
 extension UIViewController {
     // MARK: Alert View
     func showErrorAlert(errorTitle:String){
-        let alertController = UIAlertController(title: errorTitle, message: "", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: errorTitle, message: "", preferredStyle: UIAlertController.Style.alert)
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (result : UIAlertAction) -> Void in
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
@@ -47,7 +47,7 @@ extension UIViewController {
             overlay.tag = overlayViewTag
             
             //configure activity indicator
-            let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+            let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
             activityIndicator.translatesAutoresizingMaskIntoConstraints = false
             activityIndicator.tag = activityIndicatorTag
             

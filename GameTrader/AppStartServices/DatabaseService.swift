@@ -10,7 +10,7 @@ import FirebaseFirestore
 import Foundation
 import Firebase
 import CoreLocation
-import Geofirestore
+//import Geofirestore
 
 class UserDataBaseService : Servicing {
     static let shared = UserDataBaseService()
@@ -54,7 +54,7 @@ class UserDataBaseService : Servicing {
     func addUserToDB(user:User?) {
         if let user = user {
             let dbUser = DataBaseShared.db.collection(KFBUsersKey).document(user.uid)
-            print(user.displayName)
+            print(user.displayName ?? "")
             dbUser.setData( ["name":user.displayName!], merge: true) { (error) in
 //                print(error?.localizedDescription)
             }
@@ -70,13 +70,13 @@ class UserDataBaseService : Servicing {
     }
     
     func updateUserLocation(location:CLLocation) {
-        let geoFirestoreRef = Firestore.firestore().collection(FirebaseConstants.usersCollection.rawValue)
-        let geofire = GeoFirestore(collectionRef: geoFirestoreRef)
-        geofire.setLocation(location: location, forDocumentWithID: (DataBaseShared.currentUser?.uid)!, completion: { (error) in
-            if error != nil {
-                print(error?.localizedDescription)
-            }
-        })
+//        let geoFirestoreRef = Firestore.firestore().collection(FirebaseConstants.usersCollection.rawValue)
+//        let geofire = GeoFirestore(collectionRef: geoFirestoreRef)
+//        geofire.setLocation(location: location, forDocumentWithID: (DataBaseShared.currentUser?.uid)!, completion: { (error) in
+//            if error != nil {
+//                print(error?.localizedDescription)
+//            }
+//        })
     }
     
     
@@ -113,5 +113,5 @@ struct DataBaseShared {
     static let currentUser = Auth.auth().currentUser
     static let dbBatch = Firestore.firestore().batch()
     static let currentUserReference = DataBaseShared.db.collection(FirebaseConstants.usersCollection.rawValue).document(DataBaseShared.currentUser!.uid)
-    static var geofire : GeoFirestore?
+//    static var geofire : GeoFirestore?
 }

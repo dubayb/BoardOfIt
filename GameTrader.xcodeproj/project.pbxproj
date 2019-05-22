@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B7E9C7112CF04700BED3D77 /* Pods_GameTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45159CBDF1F542FA7AFEFC5E /* Pods_GameTrader.framework */; };
+		9B2CA4A321A5B39000B2B079 /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2CA49F21A5B39000B2B079 /* UICollectionView+Additions.swift */; };
+		9B2CA4A421A5B39000B2B079 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2CA4A021A5B39000B2B079 /* UIColor+Additions.swift */; };
 		9B4F83732155288C00F99E8C /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4F83722155288C00F99E8C /* ViewControllerExtensions.swift */; };
 		9B6DF9482162AE38005D9A34 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DF9472162AE38005D9A34 /* DatabaseService.swift */; };
+		9B7D89EE2211D8F000E9AB18 /* ErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D89ED2211D8F000E9AB18 /* ErrorExtensions.swift */; };
+		9B7E0A7E21F0C64700C155B1 /* DatabaseRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E0A7B21F0C64600C155B1 /* DatabaseRepresentation.swift */; };
 		9B7E4C81215967CC007B6653 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7E4C80215967CC007B6653 /* MapKit.framework */; };
 		9B7E4C8521596BBE007B6653 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B7E4C8421596BBE007B6653 /* GoogleService-Info.plist */; };
 		9B7E86E921889A2700A71B3A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E86E821889A2700A71B3A /* MapViewController.swift */; };
@@ -33,8 +38,6 @@
 		9B923DA42153F01500935391 /* BoardGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B923DA22153F01500935391 /* BoardGameTableViewCell.swift */; };
 		9B923DA52153F01500935391 /* BoardGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B923DA32153F01500935391 /* BoardGameTableViewCell.xib */; };
 		9B923DA72153F2C800935391 /* ViewControllerRESTFillable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B923DA62153F2C800935391 /* ViewControllerRESTFillable.swift */; };
-		9B92660C219F505A00542CA1 /* View Controllers in Resources */ = {isa = PBXBuildFile; fileRef = 9B92660A219F505A00542CA1 /* View Controllers */; };
-		9B92660D219F505A00542CA1 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 9B92660B219F505A00542CA1 /* Models */; };
 		9B926612219F5DC800542CA1 /* FireStoreUserNearby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B926611219F5DC800542CA1 /* FireStoreUserNearby.swift */; };
 		9B983896215422080083F5D9 /* BGGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B983895215422080083F5D9 /* BGGUser.swift */; };
 		9BB462A2215A777200BA2CD5 /* LocationManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB462A1215A777200BA2CD5 /* LocationManagerService.swift */; };
@@ -51,7 +54,6 @@
 		9BD56D9F215404FC000D2CAB /* BBGUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56D9E215404FC000D2CAB /* BBGUserListViewController.swift */; };
 		9BDDECD5215A6F14009B67F4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDECD4215A6F14009B67F4 /* SettingsViewController.swift */; };
 		9BEBA3B1215C1FF00028733E /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBA3B0215C1FF00028733E /* LocationPermissionViewController.swift */; };
-		CD59D3A6C7E4AEB82DDED3E9 /* Pods_GameTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFC04BC8AD513FE6E490749 /* Pods_GameTrader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,9 +70,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3EFC04BC8AD513FE6E490749 /* Pods_GameTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2760A480F73B48AE9133F477 /* Pods-GameTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader.debug.xcconfig"; sourceTree = "<group>"; };
+		45159CBDF1F542FA7AFEFC5E /* Pods_GameTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		984DC04B50D90CF82B98006F /* Pods-GameTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader.release.xcconfig"; sourceTree = "<group>"; };
+		9B2CA49F21A5B39000B2B079 /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
+		9B2CA4A021A5B39000B2B079 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		9B4F83722155288C00F99E8C /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		9B6DF9472162AE38005D9A34 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		9B7D89ED2211D8F000E9AB18 /* ErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtensions.swift; sourceTree = "<group>"; };
+		9B7E0A7B21F0C64600C155B1 /* DatabaseRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseRepresentation.swift; sourceTree = "<group>"; };
 		9B7E4C80215967CC007B6653 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9B7E4C8421596BBE007B6653 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B7E86E821889A2700A71B3A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -97,8 +105,6 @@
 		9B923DA22153F01500935391 /* BoardGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameTableViewCell.swift; sourceTree = "<group>"; };
 		9B923DA32153F01500935391 /* BoardGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoardGameTableViewCell.xib; sourceTree = "<group>"; };
 		9B923DA62153F2C800935391 /* ViewControllerRESTFillable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRESTFillable.swift; sourceTree = "<group>"; };
-		9B92660A219F505A00542CA1 /* View Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "View Controllers"; sourceTree = "<group>"; };
-		9B92660B219F505A00542CA1 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		9B926611219F5DC800542CA1 /* FireStoreUserNearby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreUserNearby.swift; sourceTree = "<group>"; };
 		9B983895215422080083F5D9 /* BGGUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGGUser.swift; sourceTree = "<group>"; };
 		9BB462A1215A777200BA2CD5 /* LocationManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerService.swift; sourceTree = "<group>"; };
@@ -116,8 +122,6 @@
 		9BDDECD4215A6F14009B67F4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9BDDECD8215A759A009B67F4 /* GameTrader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameTrader.entitlements; sourceTree = "<group>"; };
 		9BEBA3B0215C1FF00028733E /* LocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewController.swift; sourceTree = "<group>"; };
-		9D342AE7D259B44947C4F7C0 /* Pods-GameTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader.debug.xcconfig"; sourceTree = "<group>"; };
-		E805C2C4DF906BFB2A8EBD3A /* Pods-GameTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,18 +130,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7E4C81215967CC007B6653 /* MapKit.framework in Frameworks */,
-				CD59D3A6C7E4AEB82DDED3E9 /* Pods_GameTrader.framework in Frameworks */,
+				5B7E9C7112CF04700BED3D77 /* Pods_GameTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11DD0323762020A164EE4340 /* Pods */ = {
+		25213C0886F947341F406DA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9D342AE7D259B44947C4F7C0 /* Pods-GameTrader.debug.xcconfig */,
-				E805C2C4DF906BFB2A8EBD3A /* Pods-GameTrader.release.xcconfig */,
+				2760A480F73B48AE9133F477 /* Pods-GameTrader.debug.xcconfig */,
+				984DC04B50D90CF82B98006F /* Pods-GameTrader.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -145,11 +149,14 @@
 		9B4F83742155289E00F99E8C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9B2CA49F21A5B39000B2B079 /* UICollectionView+Additions.swift */,
+				9B2CA4A021A5B39000B2B079 /* UIColor+Additions.swift */,
 				9B7F96022195E44A006FF5DD /* UIImage+Additions.swift */,
 				9B7F96032195E44B006FF5DD /* UIView+Additions.swift */,
 				9B923D882153E28200935391 /* SegueExtension.swift */,
 				9B4F83722155288C00F99E8C /* ViewControllerExtensions.swift */,
 				9BCEF1BE2167BFF2001C08C3 /* NotificationCenterExtension.swift */,
+				9B7D89ED2211D8F000E9AB18 /* ErrorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -159,8 +166,8 @@
 			children = (
 				9B923D6D2153E24B00935391 /* GameTrader */,
 				9B923D6C2153E24B00935391 /* Products */,
-				11DD0323762020A164EE4340 /* Pods */,
 				BC0C38D4A99526BDB01EA570 /* Frameworks */,
+				25213C0886F947341F406DA0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,7 +184,6 @@
 			children = (
 				9BDDECD8215A759A009B67F4 /* GameTrader.entitlements */,
 				9B98389C21542ED60083F5D9 /* App Main */,
-				9B926609219F504100542CA1 /* Messaging */,
 				9BBD031B2178C310006AB71C /* Matcher */,
 				9BB462A3215A778B00BA2CD5 /* AppStartServices */,
 				9BEBA3B2215C1FF70028733E /* OnBoardingViewControllers */,
@@ -229,15 +235,6 @@
 				9B923D832153E27500935391 /* NetworkConstants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		9B926609219F504100542CA1 /* Messaging */ = {
-			isa = PBXGroup;
-			children = (
-				9B92660B219F505A00542CA1 /* Models */,
-				9B92660A219F505A00542CA1 /* View Controllers */,
-			);
-			path = Messaging;
 			sourceTree = "<group>";
 		};
 		9B92660E219F569F00542CA1 /* Models */ = {
@@ -309,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				9B923D6E2153E24B00935391 /* AppDelegate.swift */,
+				9B7E0A7B21F0C64600C155B1 /* DatabaseRepresentation.swift */,
 				9B923D722153E24B00935391 /* Main.storyboard */,
 			);
 			path = "App Main";
@@ -368,7 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				9B7E4C80215967CC007B6653 /* MapKit.framework */,
-				3EFC04BC8AD513FE6E490749 /* Pods_GameTrader.framework */,
+				45159CBDF1F542FA7AFEFC5E /* Pods_GameTrader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -380,13 +378,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B923D7D2153E24C00935391 /* Build configuration list for PBXNativeTarget "GameTrader" */;
 			buildPhases = (
-				C1BE3E27FB2C06FA6BC9D0A0 /* [CP] Check Pods Manifest.lock */,
+				645A64447D9F667A2BFE18C7 /* [CP] Check Pods Manifest.lock */,
 				9B923D672153E24B00935391 /* Sources */,
 				9B923D682153E24B00935391 /* Frameworks */,
 				9B923D692153E24B00935391 /* Resources */,
-				C2A823E93E9D6CF7E0C76EFD /* [CP] Embed Pods Frameworks */,
-				85F0A195259B8466A5C7DB1D /* [CP] Copy Pods Resources */,
 				9BA1DFD3217E59D100359FA0 /* Embed Watch Content */,
+				9AAADAE9E9858DB4FDFF3810 /* [CP] Embed Pods Frameworks */,
+				E03E5BB9FFD03A613783D87C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -409,6 +407,7 @@
 				TargetAttributes = {
 					9B923D6A2153E24B00935391 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -448,8 +447,6 @@
 			files = (
 				9B923DA52153F01500935391 /* BoardGameTableViewCell.xib in Resources */,
 				9BC555C2215E799500C404B4 /* BoardGameCollectionViewCell.xib in Resources */,
-				9B92660C219F505A00542CA1 /* View Controllers in Resources */,
-				9B92660D219F505A00542CA1 /* Models in Resources */,
 				9B923D792153E24C00935391 /* LaunchScreen.storyboard in Resources */,
 				9B7E4C8521596BBE007B6653 /* GoogleService-Info.plist in Resources */,
 				9BC555C6215E79D100C404B4 /* BoardGameCollectionViewTableViewCell.xib in Resources */,
@@ -461,42 +458,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		85F0A195259B8466A5C7DB1D /* [CP] Copy Pods Resources */ = {
+		645A64447D9F667A2BFE18C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1BE3E27FB2C06FA6BC9D0A0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GameTrader-checkManifestLockResult.txt",
 			);
@@ -505,60 +480,72 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C2A823E93E9D6CF7E0C76EFD /* [CP] Embed Pods Frameworks */ = {
+		9AAADAE9E9858DB4FDFF3810 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
-				"${BUILT_PRODUCTS_DIR}/PluggableApplicationDelegate/PluggableApplicationDelegate.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDStateTableView/SDStateTableView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PluggableApplicationDelegate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDStateTableView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03E5BB9FFD03A613783D87C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameTrader/Pods-GameTrader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -576,7 +563,9 @@
 				9B923D9F2153EE3000935391 /* BGGUserList.swift in Sources */,
 				9BEBA3B1215C1FF00028733E /* LocationPermissionViewController.swift in Sources */,
 				9B923D872153E27500935391 /* NetworkConstants.swift in Sources */,
+				9B7D89EE2211D8F000E9AB18 /* ErrorExtensions.swift in Sources */,
 				9B923DA72153F2C800935391 /* ViewControllerRESTFillable.swift in Sources */,
+				9B7E0A7E21F0C64700C155B1 /* DatabaseRepresentation.swift in Sources */,
 				9B6DF9482162AE38005D9A34 /* DatabaseService.swift in Sources */,
 				9B923D9B2153E86100935391 /* BGGImportViewController.swift in Sources */,
 				9B7E86EB2188ADAA00A71B3A /* BGGUserListParser.swift in Sources */,
@@ -595,6 +584,7 @@
 				9B923D912153E2B900935391 /* AnalyticsService.swift in Sources */,
 				9BDDECD5215A6F14009B67F4 /* SettingsViewController.swift in Sources */,
 				9B923D932153E34E00935391 /* BoardGameGeekRouter.swift in Sources */,
+				9B2CA4A321A5B39000B2B079 /* UICollectionView+Additions.swift in Sources */,
 				9B923D8C2153E28D00935391 /* ReusableTableCell.swift in Sources */,
 				9B923DA42153F01500935391 /* BoardGameTableViewCell.swift in Sources */,
 				9BCEF1BF2167BFF2001C08C3 /* NotificationCenterExtension.swift in Sources */,
@@ -602,6 +592,7 @@
 				9B923D6F2153E24B00935391 /* AppDelegate.swift in Sources */,
 				9B923D842153E27500935391 /* APIClient.swift in Sources */,
 				9B926612219F5DC800542CA1 /* FireStoreUserNearby.swift in Sources */,
+				9B2CA4A421A5B39000B2B079 /* UIColor+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,7 +734,7 @@
 		};
 		9B923D7E2153E24C00935391 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D342AE7D259B44947C4F7C0 /* Pods-GameTrader.debug.xcconfig */;
+			baseConfigurationReference = 2760A480F73B48AE9133F477 /* Pods-GameTrader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GameTrader/GameTrader.entitlements;
@@ -756,14 +747,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BryanDubay.GameTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9B923D7F2153E24C00935391 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E805C2C4DF906BFB2A8EBD3A /* Pods-GameTrader.release.xcconfig */;
+			baseConfigurationReference = 984DC04B50D90CF82B98006F /* Pods-GameTrader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GameTrader/GameTrader.entitlements;
@@ -776,7 +767,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BryanDubay.GameTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

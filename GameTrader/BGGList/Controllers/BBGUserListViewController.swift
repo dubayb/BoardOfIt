@@ -56,7 +56,7 @@ class BBGUserListViewController: UIViewController , BGGUserListParser{
     }
     func setTableEmpty() {
         
-        tableView.setState(.withButton(errorImage: "", title: "Like Trading Board Games?", message: "", buttonTitle: "Add your games", buttonConfig: { (button) in
+        tableView.setState(.withButton(errorImage: nil, title: "Like Trading Board Games?", message: "", buttonTitle: "Add your games", buttonConfig: { (button) in
 //            self.performSegueWithIdentifier(segueIdentifier: .ShowImportUser, sender: self)
         }, retryAction: {
             self.performSegueWithIdentifier(segueIdentifier: .ShowImportUser, sender: self)
@@ -81,8 +81,10 @@ class BBGUserListViewController: UIViewController , BGGUserListParser{
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        SDWebImageManager.shared().cancelAll()
-        SDWebImageManager.shared().imageCache?.clearMemory()
+        SDWebImageManager.shared.cancelAll()
+        SDWebImageManager.shared.imageCache.clear(with: .all) {
+            //cleared cached images
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

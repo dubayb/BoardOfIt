@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 import Firebase
-import FirebaseUI
+//import FirebaseUI
 import CoreLocation
 
 class MapViewController: UIViewController {
@@ -38,7 +38,7 @@ class MapViewController: UIViewController {
    
     @objc func centerMapOnLocation(_ notification: Notification) {
         let location = notification.object as! CLLocation
-        let coordinateRegion = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(location.coordinate.latitude, location.coordinate.longitude))
+        let coordinateRegion = MKCoordinateRegion.init(center: location.coordinate, span: MKCoordinateSpan.init(latitudeDelta: location.coordinate.latitude, longitudeDelta: location.coordinate.longitude))
         
         self.mapView.setRegion(coordinateRegion, animated: true)
         //found region now find users in it

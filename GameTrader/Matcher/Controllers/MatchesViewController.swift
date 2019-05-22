@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Geofirestore
-import FirebaseFirestore
+//import Geofirestore
+//import FirebaseFirestore
 import SDStateTableView
 
 class MatchesViewController: UIViewController  {
@@ -44,8 +44,12 @@ class MatchesViewController: UIViewController  {
 extension MatchesViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let userToMatchWith = Matcher.shared.matchedUserNames[indexPath.section]
+//        let gameToTalkAbout = Matcher.shared.
+        
         print(userToMatchWith)
         //message this user
+        //create a channel they can visit
+        
     }
 }
 extension MatchesViewController : FireStoreUserNearby {
@@ -56,9 +60,12 @@ extension MatchesViewController : FireStoreUserNearby {
     }
     
     func failureWithError(error: String) {
-        self.tableView.setState(.withButton(errorImage: "", title: "Sorry! There are no users near you.", message: "", buttonTitle: "Refresh", buttonConfig: { (button) in
-            self.listenToDataBaseUpdated()
+        print(error)
+        self.displayActivityIndicator(shouldDisplay: false)
+        self.tableView.setState(.withButton(errorImage: nil, title: "Sorry! There are no users near you.", message: "", buttonTitle: "Refresh", buttonConfig: { (button) in
+//            self.listenToDataBaseUpdated()
         }, retryAction: {
+            self.displayActivityIndicator(shouldDisplay: true)
             self.listenToDataBaseUpdated()
         }))
     }

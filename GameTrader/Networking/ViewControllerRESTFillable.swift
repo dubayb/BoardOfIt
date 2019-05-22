@@ -20,7 +20,7 @@ protocol ViewControllerRestFillable :  APIClient , DataFillable {
 extension ViewControllerRestFillable where Self : UIViewController {
 
     func getAllData() {
-        performRequest(decodingType: T.self , route: self.route) { (result) in
+        performRequest(route: self.route) { (result) in
             switch result {
             case .success(let value):
                 self.successWithData(data: value)

@@ -6,16 +6,11 @@ target 'GameTrader' do
   use_frameworks!
 
   # Pods for GameTrader
-pod 'PluggableApplicationDelegate'
-pod 'SDWebImage', '~> 4.0'
-pod 'SDStateTableView'
 pod 'Firebase/Core'
-pod 'FirebaseUI/Auth'
-pod 'Firebase/Firestore'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
+pod 'SDWebImage'
 pod 'FirebaseUI/Google'
-pod 'FirebaseUI/Facebook'
-pod 'FirebaseUI/Phone'
-pod 'Firebase/Messaging'
-pod ‘Geofirestore'
-pod 'MessageKit'
+pod 'Firebase/Firestore'
+pod 'SDStateTableView'
 end

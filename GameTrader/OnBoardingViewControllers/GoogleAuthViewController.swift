@@ -53,7 +53,7 @@ class GoogleAuthViewController: UIViewController , FUIAuthDelegate  {
         }
     }
     func authUI(_ authUI: FUIAuth, didFinish operation: FUIAccountSettingsOperationType, error: Error?) {
-        print(error?.localizedDescription)
+        print(error?.localizedDescription ?? "")
     }
     
 }
