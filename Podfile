@@ -13,4 +13,5 @@ pod 'SDWebImage'
 pod 'FirebaseUI/Google'
 pod 'Firebase/Firestore'
 pod 'SDStateTableView'
+pod 'GeoFire'
 end

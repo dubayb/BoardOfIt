@@ -51,6 +51,7 @@
 		9BCEF1BB21666099001C08C3 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEF1BA21666099001C08C3 /* MatchesViewController.swift */; };
 		9BCEF1BD216669A2001C08C3 /* MatchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEF1BC216669A2001C08C3 /* MatchingService.swift */; };
 		9BCEF1BF2167BFF2001C08C3 /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEF1BE2167BFF2001C08C3 /* NotificationCenterExtension.swift */; };
+		9BD3B4F622959F20006D2C90 /* Geofirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B4F522959F20006D2C90 /* Geofirestore.swift */; };
 		9BD56D9F215404FC000D2CAB /* BBGUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56D9E215404FC000D2CAB /* BBGUserListViewController.swift */; };
 		9BDDECD5215A6F14009B67F4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDECD4215A6F14009B67F4 /* SettingsViewController.swift */; };
 		9BEBA3B1215C1FF00028733E /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBA3B0215C1FF00028733E /* LocationPermissionViewController.swift */; };
@@ -118,6 +119,7 @@
 		9BCEF1BA21666099001C08C3 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		9BCEF1BC216669A2001C08C3 /* MatchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingService.swift; sourceTree = "<group>"; };
 		9BCEF1BE2167BFF2001C08C3 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
+		9BD3B4F522959F20006D2C90 /* Geofirestore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geofirestore.swift; sourceTree = "<group>"; };
 		9BD56D9E215404FC000D2CAB /* BBGUserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBGUserListViewController.swift; sourceTree = "<group>"; };
 		9BDDECD4215A6F14009B67F4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9BDDECD8215A759A009B67F4 /* GameTrader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameTrader.entitlements; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		9B923D6D2153E24B00935391 /* GameTrader */ = {
 			isa = PBXGroup;
 			children = (
+				9BD3B4F522959F20006D2C90 /* Geofirestore.swift */,
 				9BDDECD8215A759A009B67F4 /* GameTrader.entitlements */,
 				9B98389C21542ED60083F5D9 /* App Main */,
 				9BBD031B2178C310006AB71C /* Matcher */,
@@ -570,6 +573,7 @@
 				9B923D9B2153E86100935391 /* BGGImportViewController.swift in Sources */,
 				9B7E86EB2188ADAA00A71B3A /* BGGUserListParser.swift in Sources */,
 				9B923D892153E28200935391 /* SegueExtension.swift in Sources */,
+				9BD3B4F622959F20006D2C90 /* Geofirestore.swift in Sources */,
 				9BB462A6215A8E6700BA2CD5 /* GoogleAuthViewController.swift in Sources */,
 				9B4F83732155288C00F99E8C /* ViewControllerExtensions.swift in Sources */,
 				9B7F96062195E44B006FF5DD /* UIImage+Additions.swift in Sources */,

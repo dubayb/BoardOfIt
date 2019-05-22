@@ -119,7 +119,7 @@ public class SDStateTableView: UITableView {
     }
     
     var originalSeparatorStyle =  UITableViewCell.SeparatorStyle.singleLine
-    var spinnerView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    var spinnerView = UIActivityIndicatorView(style: .gray)
     
     var dataStateTitleLabel = UILabel.autolayoutView()
     var dataStateSubtitleLabel = UILabel.autolayoutView()

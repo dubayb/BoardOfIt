@@ -8,25 +8,24 @@
 
 import Foundation
 import FirebaseFirestore
-//import Geofirestore
 
 protocol FireStoreUserNearby : DataFillable {
     func listenToDataBaseUpdated()
 }
 extension FireStoreUserNearby {
     func listenToDataBaseUpdated() {
-//        let usersFirestoreRef = Firestore.firestore().collection(FirebaseConstants.usersCollection.rawValue)
-//        let geofire = GeoFirestore(collectionRef: usersFirestoreRef)
-//        let query = geofire.query(withCenter: LocationService.usersLocation, radius: 9)
-//        _ = query.observeReady {
-//            Matcher.shared.configureMatchesWithGeofireReferences(usersNearby: geofire.collectionRef) { ( result) in
-//                switch result {
-//                case .success(let userInfo) :
-//                   self.successWithData(data: userInfo)
-//                case .failure(let error):
-//                   self.failureWithError(error: error)
-//                }
-//            }
-//        }
+        let usersFirestoreRef = Firestore.firestore().collection(FirebaseConstants.usersCollection.rawValue)
+        let geofire = GeoFirestore(collectionRef: usersFirestoreRef)
+        let query = geofire.query(withCenter: LocationService.usersLocation, radius: 9)
+        _ = query.observeReady {
+            Matcher.shared.configureMatchesWithGeofireReferences(usersNearby: geofire.collectionRef) { ( result) in
+                switch result {
+                case .success(let userInfo) :
+                   self.successWithData(data: userInfo)
+                case .failure(let error):
+                   self.failureWithError(error: error)
+                }
+            }
+        }
     }
 }

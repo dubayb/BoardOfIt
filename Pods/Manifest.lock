@@ -13,6 +13,9 @@ PODS:
     - FirebaseAnalytics (= 5.5.0)
   - Firebase/CoreOnly (5.16.0):
     - FirebaseCore (= 5.2.0)
+  - Firebase/Database (5.16.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.1.0)
   - Firebase/Firestore (5.16.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (= 1.0.0)
@@ -33,6 +36,10 @@ PODS:
   - FirebaseAuthInterop (1.0.0)
   - FirebaseCore (5.2.0):
     - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDatabase (5.1.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.2)
+    - leveldb-library (~> 1.18)
   - FirebaseFirestore (1.0.0):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
@@ -58,6 +65,8 @@ PODS:
   - FirebaseUI/Google (6.2.1):
     - FirebaseUI/Auth
     - GoogleSignIn (~> 4.0)
+  - GeoFire (3.0.0):
+    - Firebase/Database (~> 5.0)
   - GoogleAppMeasurement (5.5.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -128,6 +137,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - FirebaseUI/Google
+  - GeoFire
   - GoogleSignIn
   - SDStateTableView
   - SDWebImage
@@ -140,9 +150,11 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseFirestore
     - FirebaseInstanceID
     - FirebaseUI
+    - GeoFire
     - GoogleAppMeasurement
     - GoogleSignIn
     - GoogleToolboxForMac
@@ -163,9 +175,11 @@ SPEC CHECKSUMS:
   FirebaseAuth: c9b3ff063c223d2841d97240af547ce511bce19a
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: ea2d1816723ef21492b8e9113303e1350db5e08c
+  FirebaseDatabase: 23acb0c53cd4d4070a427b60100b2e4aaa97c45d
   FirebaseFirestore: 6f2b93b4f7bb8416628142763c91ccc00fa04c86
   FirebaseInstanceID: 97ea7a5dca9afd72c79bfcdddb7a44aa1cbb42a1
   FirebaseUI: c9e227a7d44e2e422a461cb3f4ead8dc5c7326e6
+  GeoFire: e3ae6f4be3f2466c3467ef6c1c203db3af935c59
   GoogleAppMeasurement: 621f3bc6211d5ba548debe01fafad30cf5ab6859
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
@@ -179,6 +193,6 @@ SPEC CHECKSUMS:
   SDStateTableView: cb4dd2a3b6d31850a70e91c19dc79ab127a8e7c6
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
 
-PODFILE CHECKSUM: b883163d90935b3fcb9cd924296f2a945c53f5cf
+PODFILE CHECKSUM: e924bc9494f67e5acb4814682030754c62d62f9c
 
 COCOAPODS: 1.5.3

@@ -70,13 +70,13 @@ class UserDataBaseService : Servicing {
     }
     
     func updateUserLocation(location:CLLocation) {
-//        let geoFirestoreRef = Firestore.firestore().collection(FirebaseConstants.usersCollection.rawValue)
-//        let geofire = GeoFirestore(collectionRef: geoFirestoreRef)
-//        geofire.setLocation(location: location, forDocumentWithID: (DataBaseShared.currentUser?.uid)!, completion: { (error) in
-//            if error != nil {
-//                print(error?.localizedDescription)
-//            }
-//        })
+        let geoFirestoreRef = Firestore.firestore().collection(FirebaseConstants.usersCollection.rawValue)
+        let geofire = GeoFirestore(collectionRef: geoFirestoreRef)
+        geofire.setLocation(location: location, forDocumentWithID: (DataBaseShared.currentUser?.uid)!, completion: { (error) in
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+        })
     }
     
     
