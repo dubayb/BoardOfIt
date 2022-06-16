@@ -11,6 +11,11 @@ import Foundation
 enum NetworkConstants  {
     enum BoardGameGeek : String {
         case baseUrl = "https://bgg-json.azurewebsites.net/collection/"
+        
+    }
+    enum BoardGameAtlas : String {
+        case baseUrl = "https://api.boardgameatlas.com/api/"
+        case clientID = "client_id=rgvcNXzf16/"
     }
 }
 enum FirebaseConstants : String {
