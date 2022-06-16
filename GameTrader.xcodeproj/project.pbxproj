@@ -12,6 +12,21 @@
 		9B2CA4A421A5B39000B2B079 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2CA4A021A5B39000B2B079 /* UIColor+Additions.swift */; };
 		9B4F83732155288C00F99E8C /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4F83722155288C00F99E8C /* ViewControllerExtensions.swift */; };
 		9B6DF9482162AE38005D9A34 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DF9472162AE38005D9A34 /* DatabaseService.swift */; };
+		9B7746DB285B79860075C27D /* Publishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746CA285B79860075C27D /* Publishers.swift */; };
+		9B7746DC285B79860075C27D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746CB285B79860075C27D /* Game.swift */; };
+		9B7746DD285B79860075C27D /* Msrps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746CC285B79860075C27D /* Msrps.swift */; };
+		9B7746DE285B79860075C27D /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746CD285B79860075C27D /* Categories.swift */; };
+		9B7746DF285B79860075C27D /* Mechanics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746CE285B79860075C27D /* Mechanics.swift */; };
+		9B7746E0285B79860075C27D /* BoardGameAtlasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746CF285B79860075C27D /* BoardGameAtlasModel.swift */; };
+		9B7746E1285B79860075C27D /* Primary_publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D0285B79860075C27D /* Primary_publisher.swift */; };
+		9B7746E2285B79860075C27D /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D1285B79860075C27D /* Games.swift */; };
+		9B7746E3285B79860075C27D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D2285B79860075C27D /* Images.swift */; };
+		9B7746E4285B79860075C27D /* Designers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D3285B79860075C27D /* Designers.swift */; };
+		9B7746E5285B79860075C27D /* Historical_low_prices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D4285B79860075C27D /* Historical_low_prices.swift */; };
+		9B7746E6285B79860075C27D /* Sku_objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D5285B79860075C27D /* Sku_objects.swift */; };
+		9B7746E7285B79860075C27D /* Primary_designer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D6285B79860075C27D /* Primary_designer.swift */; };
+		9B7746E8285B79860075C27D /* SearchAndAddGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746D8285B79860075C27D /* SearchAndAddGameViewController.swift */; };
+		9B7746E9285B79860075C27D /* BGAtlasRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7746DA285B79860075C27D /* BGAtlasRouter.swift */; };
 		9B7D89EE2211D8F000E9AB18 /* ErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D89ED2211D8F000E9AB18 /* ErrorExtensions.swift */; };
 		9B7E0A7E21F0C64700C155B1 /* DatabaseRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E0A7B21F0C64600C155B1 /* DatabaseRepresentation.swift */; };
 		9B7E4C81215967CC007B6653 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7E4C80215967CC007B6653 /* MapKit.framework */; };
@@ -78,6 +93,21 @@
 		9B2CA4A021A5B39000B2B079 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		9B4F83722155288C00F99E8C /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		9B6DF9472162AE38005D9A34 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		9B7746CA285B79860075C27D /* Publishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publishers.swift; sourceTree = "<group>"; };
+		9B7746CB285B79860075C27D /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9B7746CC285B79860075C27D /* Msrps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Msrps.swift; sourceTree = "<group>"; };
+		9B7746CD285B79860075C27D /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		9B7746CE285B79860075C27D /* Mechanics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mechanics.swift; sourceTree = "<group>"; };
+		9B7746CF285B79860075C27D /* BoardGameAtlasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardGameAtlasModel.swift; sourceTree = "<group>"; };
+		9B7746D0285B79860075C27D /* Primary_publisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Primary_publisher.swift; sourceTree = "<group>"; };
+		9B7746D1285B79860075C27D /* Games.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		9B7746D2285B79860075C27D /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		9B7746D3285B79860075C27D /* Designers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designers.swift; sourceTree = "<group>"; };
+		9B7746D4285B79860075C27D /* Historical_low_prices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Historical_low_prices.swift; sourceTree = "<group>"; };
+		9B7746D5285B79860075C27D /* Sku_objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sku_objects.swift; sourceTree = "<group>"; };
+		9B7746D6285B79860075C27D /* Primary_designer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Primary_designer.swift; sourceTree = "<group>"; };
+		9B7746D8285B79860075C27D /* SearchAndAddGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAndAddGameViewController.swift; sourceTree = "<group>"; };
+		9B7746DA285B79860075C27D /* BGAtlasRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGAtlasRouter.swift; sourceTree = "<group>"; };
 		9B7D89ED2211D8F000E9AB18 /* ErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtensions.swift; sourceTree = "<group>"; };
 		9B7E0A7B21F0C64600C155B1 /* DatabaseRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseRepresentation.swift; sourceTree = "<group>"; };
 		9B7E4C80215967CC007B6653 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -163,6 +193,52 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9B7746C8285B79860075C27D /* BoardGameAtlasSearch */ = {
+			isa = PBXGroup;
+			children = (
+				9B7746C9285B79860075C27D /* Model */,
+				9B7746D7285B79860075C27D /* ViewController */,
+				9B7746D9285B79860075C27D /* Router */,
+			);
+			path = BoardGameAtlasSearch;
+			sourceTree = "<group>";
+		};
+		9B7746C9285B79860075C27D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B7746CA285B79860075C27D /* Publishers.swift */,
+				9B7746CB285B79860075C27D /* Game.swift */,
+				9B7746CC285B79860075C27D /* Msrps.swift */,
+				9B7746CD285B79860075C27D /* Categories.swift */,
+				9B7746CE285B79860075C27D /* Mechanics.swift */,
+				9B7746CF285B79860075C27D /* BoardGameAtlasModel.swift */,
+				9B7746D0285B79860075C27D /* Primary_publisher.swift */,
+				9B7746D1285B79860075C27D /* Games.swift */,
+				9B7746D2285B79860075C27D /* Images.swift */,
+				9B7746D3285B79860075C27D /* Designers.swift */,
+				9B7746D4285B79860075C27D /* Historical_low_prices.swift */,
+				9B7746D5285B79860075C27D /* Sku_objects.swift */,
+				9B7746D6285B79860075C27D /* Primary_designer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B7746D7285B79860075C27D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9B7746D8285B79860075C27D /* SearchAndAddGameViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9B7746D9285B79860075C27D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9B7746DA285B79860075C27D /* BGAtlasRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		9B923D622153E24B00935391 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +260,7 @@
 		9B923D6D2153E24B00935391 /* GameTrader */ = {
 			isa = PBXGroup;
 			children = (
+				9B7746C8285B79860075C27D /* BoardGameAtlasSearch */,
 				9BD3B4F522959F20006D2C90 /* Geofirestore.swift */,
 				9BDDECD8215A759A009B67F4 /* GameTrader.entitlements */,
 				9B98389C21542ED60083F5D9 /* App Main */,
@@ -559,39 +636,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7F96072195E44B006FF5DD /* UIView+Additions.swift in Sources */,
+				9B7746DF285B79860075C27D /* Mechanics.swift in Sources */,
 				9B7E86E921889A2700A71B3A /* MapViewController.swift in Sources */,
 				9B923D8D2153E28D00935391 /* MultipleTypesViewModel.swift in Sources */,
 				9BC555C5215E79D100C404B4 /* BoardGameCollectionViewTableViewCell.swift in Sources */,
 				9BCEF1BD216669A2001C08C3 /* MatchingService.swift in Sources */,
 				9B923D9F2153EE3000935391 /* BGGUserList.swift in Sources */,
+				9B7746E9285B79860075C27D /* BGAtlasRouter.swift in Sources */,
 				9BEBA3B1215C1FF00028733E /* LocationPermissionViewController.swift in Sources */,
+				9B7746DD285B79860075C27D /* Msrps.swift in Sources */,
 				9B923D872153E27500935391 /* NetworkConstants.swift in Sources */,
 				9B7D89EE2211D8F000E9AB18 /* ErrorExtensions.swift in Sources */,
 				9B923DA72153F2C800935391 /* ViewControllerRESTFillable.swift in Sources */,
 				9B7E0A7E21F0C64700C155B1 /* DatabaseRepresentation.swift in Sources */,
+				9B7746E8285B79860075C27D /* SearchAndAddGameViewController.swift in Sources */,
+				9B7746E3285B79860075C27D /* Images.swift in Sources */,
+				9B7746E2285B79860075C27D /* Games.swift in Sources */,
 				9B6DF9482162AE38005D9A34 /* DatabaseService.swift in Sources */,
+				9B7746E4285B79860075C27D /* Designers.swift in Sources */,
 				9B923D9B2153E86100935391 /* BGGImportViewController.swift in Sources */,
 				9B7E86EB2188ADAA00A71B3A /* BGGUserListParser.swift in Sources */,
 				9B923D892153E28200935391 /* SegueExtension.swift in Sources */,
 				9BD3B4F622959F20006D2C90 /* Geofirestore.swift in Sources */,
+				9B7746DC285B79860075C27D /* Game.swift in Sources */,
 				9BB462A6215A8E6700BA2CD5 /* GoogleAuthViewController.swift in Sources */,
 				9B4F83732155288C00F99E8C /* ViewControllerExtensions.swift in Sources */,
+				9B7746E1285B79860075C27D /* Primary_publisher.swift in Sources */,
 				9B7F96062195E44B006FF5DD /* UIImage+Additions.swift in Sources */,
+				9B7746E5285B79860075C27D /* Historical_low_prices.swift in Sources */,
 				9BC555C1215E799500C404B4 /* BoardGameCollectionViewCell.swift in Sources */,
+				9B7746E0285B79860075C27D /* BoardGameAtlasModel.swift in Sources */,
 				9BC555BE215E685100C404B4 /* OnBoardingPageViewController.swift in Sources */,
 				9BCEF1BB21666099001C08C3 /* MatchesViewController.swift in Sources */,
 				9B923D862153E27500935391 /* NetworkRouter.swift in Sources */,
+				9B7746DE285B79860075C27D /* Categories.swift in Sources */,
 				9B983896215422080083F5D9 /* BGGUser.swift in Sources */,
 				9BD56D9F215404FC000D2CAB /* BBGUserListViewController.swift in Sources */,
 				9BB462A2215A777200BA2CD5 /* LocationManagerService.swift in Sources */,
 				9BBD031A21778121006AB71C /* DataBaseGameItem.swift in Sources */,
+				9B7746E7285B79860075C27D /* Primary_designer.swift in Sources */,
 				9B923D912153E2B900935391 /* AnalyticsService.swift in Sources */,
+				9B7746DB285B79860075C27D /* Publishers.swift in Sources */,
 				9BDDECD5215A6F14009B67F4 /* SettingsViewController.swift in Sources */,
 				9B923D932153E34E00935391 /* BoardGameGeekRouter.swift in Sources */,
 				9B2CA4A321A5B39000B2B079 /* UICollectionView+Additions.swift in Sources */,
 				9B923D8C2153E28D00935391 /* ReusableTableCell.swift in Sources */,
 				9B923DA42153F01500935391 /* BoardGameTableViewCell.swift in Sources */,
 				9BCEF1BF2167BFF2001C08C3 /* NotificationCenterExtension.swift in Sources */,
+				9B7746E6285B79860075C27D /* Sku_objects.swift in Sources */,
 				9B923DA12153EF2600935391 /* UserDefaultsConstants.swift in Sources */,
 				9B923D6F2153E24B00935391 /* AppDelegate.swift in Sources */,
 				9B923D842153E27500935391 /* APIClient.swift in Sources */,
