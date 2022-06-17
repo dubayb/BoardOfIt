@@ -11,7 +11,7 @@ import UIKit
 class SearchAndAddGameViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+   
     var searchResults: BoardGameAtlasModel? {
         didSet {
             DispatchQueue.main.async { [self] in
@@ -21,7 +21,8 @@ class SearchAndAddGameViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.delegate = self
+        tableView.dataSource = self
         print("search and add VC")
     }
     

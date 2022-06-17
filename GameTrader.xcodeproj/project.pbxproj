@@ -193,6 +193,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9B71886C285CCC650072C519 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				9BD3B4F522959F20006D2C90 /* Geofirestore.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
 		9B7746C8285B79860075C27D /* BoardGameAtlasSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,9 +268,9 @@
 		9B923D6D2153E24B00935391 /* GameTrader */ = {
 			isa = PBXGroup;
 			children = (
-				9B7746C8285B79860075C27D /* BoardGameAtlasSearch */,
-				9BD3B4F522959F20006D2C90 /* Geofirestore.swift */,
 				9BDDECD8215A759A009B67F4 /* GameTrader.entitlements */,
+				9B7746C8285B79860075C27D /* BoardGameAtlasSearch */,
+				9B71886C285CCC650072C519 /* Firestore */,
 				9B98389C21542ED60083F5D9 /* App Main */,
 				9BBD031B2178C310006AB71C /* Matcher */,
 				9BB462A3215A778B00BA2CD5 /* AppStartServices */,
