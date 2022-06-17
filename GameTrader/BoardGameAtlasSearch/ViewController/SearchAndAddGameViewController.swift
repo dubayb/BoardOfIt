@@ -32,7 +32,7 @@ class SearchAndAddGameViewController: UIViewController {
 extension SearchAndAddGameViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let router = BoardGameAtlasRouter.searchGame(query: textField.text!)
-        let bgSearch = bgatlas.init(query: textField.text!)
+        let bgSearch = bgatlasSearch.init(query: textField.text!)
         bgSearch.performRequest(route: router) { result in
             switch result {
             case .success(let model) :
@@ -49,9 +49,16 @@ extension SearchAndAddGameViewController: UITextFieldDelegate {
     
 }
 extension SearchAndAddGameViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //pop up view to add to your board game DB
+        
+        
+    }
 }
 extension SearchAndAddGameViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let results = searchResults, let games = results.games {
             return games.count
@@ -70,7 +77,7 @@ extension SearchAndAddGameViewController: UITableViewDataSource {
     
     
 }
-struct bgatlas : APIClient {
+struct bgatlasSearch : APIClient {
     var route: Router
     typealias T = BoardGameAtlasModel
     init(query: String) {

@@ -55,12 +55,14 @@ class UserDataBaseService : Servicing {
         if let user = user {
             let dbUser = DataBaseShared.db.collection(KFBUsersKey).document(user.uid)
             print(user.displayName ?? "")
+            
             dbUser.setData( ["name":user.displayName!], merge: true) { (error) in
-//                print(error?.localizedDescription)
+                print(error?.localizedDescription)
             }
         }
     }
     func addBGGUsernameToFirebase(user:User?) {
+        
         if let user = user {
             let dbUser = DataBaseShared.db.collection(FirebaseConstants.usersCollection.rawValue).document(user.uid)
             dbUser.setData(["BGGUserName":BGGUser.shared.userName],merge:true) { (error) in

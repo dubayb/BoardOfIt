@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="-380" y="-168"/>
         </scene>
-        <!--Item-->
+        <!--Search And Add Game View Controller-->
         <scene sceneID="aJR-GN-nUz">
             <objects>
                 <viewController id="SzE-BT-fa2" customClass="SearchAndAddGameViewController" customModule="GameTrader" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,17 +112,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="xJ5-JI-US9">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="xJ5-JI-US9">
                                 <rect key="frame" x="20" y="64" width="374" height="729"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for a game you own" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-rF-epY">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="229"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Got Games?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-R9-AQF">
-                                        <rect key="frame" x="0.0" y="41.333333333333329" width="374" height="33.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="250" width="374" height="229"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                         <connections>
@@ -130,7 +130,7 @@
                                         </connections>
                                     </textField>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Aig-Ta-OIM">
-                                        <rect key="frame" x="0.0" y="95.666666666666686" width="374" height="633.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="500" width="374" height="229"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basic" textLabel="4rq-Jx-0OP" style="IBUITableViewCellStyleDefault" id="uD3-6s-KPf">
@@ -140,7 +140,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4rq-Jx-0OP">
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4rq-Jx-0OP">
                                                             <rect key="frame" x="20" y="0.0" width="334" height="43.666667938232422"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
@@ -151,10 +151,6 @@
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="SzE-BT-fa2" id="68d-Ww-48U"/>
-                                            <outlet property="delegate" destination="SzE-BT-fa2" id="vlm-14-dBO"/>
-                                        </connections>
                                     </tableView>
                                 </subviews>
                             </stackView>
@@ -163,13 +159,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xJ5-JI-US9" firstAttribute="top" secondItem="exB-hl-BiG" secondAttribute="top" constant="20" id="1HU-RA-roJ"/>
-                            <constraint firstItem="Aig-Ta-OIM" firstAttribute="height" secondItem="igH-h3-4SO" secondAttribute="height" multiplier="0.706101" priority="999" constant="0.75" id="HMw-Dm-l5s"/>
                             <constraint firstItem="exB-hl-BiG" firstAttribute="bottom" secondItem="xJ5-JI-US9" secondAttribute="bottom" constant="20" id="hck-Tc-SxI"/>
                             <constraint firstItem="xJ5-JI-US9" firstAttribute="leading" secondItem="exB-hl-BiG" secondAttribute="leading" constant="20" id="iTi-nH-nfz"/>
                             <constraint firstItem="exB-hl-BiG" firstAttribute="trailing" secondItem="xJ5-JI-US9" secondAttribute="trailing" constant="20" id="oVU-kb-b94"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="G21-8Q-gxS"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="G21-8Q-gxS"/>
                     <connections>
                         <outlet property="tableView" destination="Aig-Ta-OIM" id="gy4-C9-5JX"/>
                     </connections>
